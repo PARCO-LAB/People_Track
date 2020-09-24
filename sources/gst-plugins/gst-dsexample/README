@@ -1,0 +1,54 @@
+
+Refer to the DeepStream SDK documentation for a complete description of the plugin.
+
+Pre-requisites:
+   - GStreamer-1.0 Development package
+   - GStreamer-1.0 Base Plugins Development package
+   - OpenCV Development package
+
+Install using:
+   sudo apt-get install libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev \
+       libopencv-dev
+
+
+Compiling and installing the plugin:
+   Export or set in Makefile the appropriate cuda version using CUDA_VER
+   Run make and sudo make install.
+
+
+Corresponding config file changes (Add the following section). GPU ID might need
+modification based on the GPU configuration:
+   [ds-example]
+   enable=1
+   processing-width=640
+   processing-height=480
+   full-frame=0
+   #batch-size for batch supported optimized plugin
+   batch-size=1
+   unique-id=15
+   gpu-id=0   
+
+
+In this form, the plugin is thought to be inserted after an inference plugin, its function is to calculate the distance (2D) between the objects detected by the plugin above and attach a label to them indicating the distance between one and the other. The label turns red when this distance is under a treshold.
+
+How to insert the customized plugin in the people track application:
+   -istantiate a new gst-dsexample plugin (example code below)
+   -add it in the pipeline
+   -link it between pgie (our inference plugin) and nvvideoconvert
+
+To test the plugin, it is recommended to remove the tracker from the pipeline, as it is possible that conflicts on the attachment of labels may be generated
+
+
+EXAMPLES: 
+-Istantiate the plugin: 
+"dsexample = gst_element_factory_make ("dsexample", "ds-example");"
+
+
+-Add it in the pipeline: 
+"gst_bin_add_many(GST_BIN(pipeline),
+    source, h264parser, decoder, streammux, pgie,
+    nvvidconv,dsexample, nvosd, transform, sink, NULL);"
+
+-Link it to other plugins:
+ "gst_element_link_many(streammux, pgie,
+      nvvidconv, DSEXAMPLE,nvosd, transform, sink, NULL);
