@@ -9,11 +9,11 @@ To install these packages, execute the following command:
    libgstrtspserver-1.0-dev libx11-dev
 
 Compilation Steps for file source demo:
-  $ /Base/sources/apps/my_apps/Tirocinio
+  $ /Base/sources/apps/my_apps/People_Track
   $ make
   $ ./People_Track <h264_elementary_stream> 0
 
-Compilation Steps for file source demo:
+Compilation Steps for livecam demo:
   $ /Base/sources/apps/my_apps/Tirocinio
   $ make
   $ ./People_Track <v4l2-device-path> 1
