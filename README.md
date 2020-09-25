@@ -13,7 +13,7 @@ Similarly for tracking, by modifying the [People_Track_tracker_config.txt](https
 For more: [NvTracker](https://docs.nvidia.com/metropolis/deepstream/dev-guide/index.html#page/DeepStream%20Plugins%20Development%20Guide/deepstream_plugin_details.3.02.html#wwpID0E0N20HA)
 
  # :computer: App description:
-This application allows us to perform detection of people and their tracking. We can know in every instant of the scene the coordinates of each person and the distance that it has from other people, we can reconstruct (through the coordinates) the path that this person has made. Briefly, thanks to this application it is literally possible to have a mapping of the positions that each person has taken within the scene.
+This application allows us to perform detection of people and their tracking. We can know in every instant of the scene the coordinates of each person and the distance that it has from other people, we can reconstruct (through the coordinates) the path that this person has made. \nBriefly, thanks to this application it is literally possible to have a mapping of the positions that each person has taken within the scene.
 
 # :computer: To run the app:
 To run People_Track you must have correctly installed deepstream 5.0 with right /opt root directory.
