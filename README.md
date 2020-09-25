@@ -1,5 +1,4 @@
-:computer:
-# People_Track:
+# :computer: People_Track:
  A DeepStream-based tracking and detection platform for embedded architectures.
  
  # App description:
