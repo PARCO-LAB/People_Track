@@ -1,5 +1,7 @@
 # :computer: People_Track:
 ***A DeepStream-based tracking and detection platform for embedded architectures.*** 
+
+
 Below we can find an example of the output generated:
 
 ![](https://s1.gifyu.com/images/ezgif.com-optimize-21a2f196fe29bbfb3.gif)
