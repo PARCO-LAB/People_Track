@@ -6,7 +6,9 @@ Below we can find an example of the output generated:
 
 ![](https://s1.gifyu.com/images/ezgif.com-optimize-21a2f196fe29bbfb3.gif)
 
-In this repo, a [resnet10](https://github.com/PARCO-LAB/People_Track/tree/master/networks/models/Primary_Detector) network is provided for primary detector inference. It is however possible to change the network used by modifying the [pgie_config.txt](https://github.com/PARCO-LAB/People_Track/blob/master/sources/apps/my_apps/People%20Track/People_Track_pgie_config.txt) file. 
+In this repo, a [resnet10](https://github.com/PARCO-LAB/People_Track/tree/master/networks/models/Primary_Detector) network is provided for primary detector inference. 
+It is however possible to change the network used by modifying the [pgie_config.txt](https://github.com/PARCO-LAB/People_Track/blob/master/sources/apps/my_apps/People%20Track/People_Track_pgie_config.txt) file. 
+
 Similarly for tracking, by modifying the [People_Track_tracker_config.txt](https://github.com/PARCO-LAB/People_Track/blob/master/sources/apps/my_apps/People%20Track/People_Track_tracker_config.txt) file it is possible to choose between 2 possibilitie.
 For more: [NvTracker](https://docs.nvidia.com/metropolis/deepstream/dev-guide/index.html#page/DeepStream%20Plugins%20Development%20Guide/deepstream_plugin_details.3.02.html#wwpID0E0N20HA)
 
