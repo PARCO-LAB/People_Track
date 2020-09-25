@@ -7,8 +7,8 @@ This application allows us to perform detection of people and their tracking. We
 # To run the app:
 To run People_Track you must have correctly installed deepstream 5.0 with right /opt root directory.
 All config files, header files, networks are provided in this folders.
-Move to [People_Track](https://github.com/PARCO-LAB/People_Track/tree/master/sources/apps/my_apps/People%20Track) and follow the README instruction.
+Move to [People_Track](https://github.com/PARCO-LAB/People_Track/tree/master/sources/apps/my_apps/People%20Track) and follow the [README](https://github.com/PARCO-LAB/People_Track/blob/master/sources/apps/my_apps/People%20Track/README) instruction.
 
 # Custom plugin:
 An example of g_stream custom plugin is also provided in this repo. Its purpose remains mainly to show how a plugin with a customized logic can be integrated within a deepstream pipeline. As it is, the plugin allows us to print on each person, the distance between them and the closest person. We can also use the gst-dsexample default features like "Blurring" of the detected classes.
-To integrate the custom plugin in People_Track, move to: /sources/gst-plugins/gst-dsexample and follow the README instructions
+To integrate the custom plugin in People_Track, move to: [gst-dsexample](https://github.com/PARCO-LAB/People_Track/tree/master/sources/gst-plugins/gst-dsexample) and follow the [README](https://github.com/PARCO-LAB/People_Track/blob/master/sources/gst-plugins/gst-dsexample/README) instructions
