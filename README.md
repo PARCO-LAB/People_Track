@@ -14,7 +14,7 @@ Move to [People_Track](https://github.com/PARCO-LAB/People_Track/tree/master/sou
 # :computer: Custom plugin:
 An example of g_stream custom plugin is also provided in this repo. Its purpose remains mainly to show how a plugin with a customized logic can be integrated within a deepstream pipeline. As it is, the plugin allows us to print on each person, the distance between them and the closest person:
 
-![](https://s1.gifyu.com/images/ezgif.com-optimize-47129fffb38501c2b.md.gif)
+![](https://s1.gifyu.com/images/ezgif.com-optimize-59dc532e5f7902dff.gif)
 
 We can also use the gst-dsexample default features like "Blurring" of the detected classes:
 
