@@ -14,4 +14,4 @@ An example of g_stream custom plugin is also provided in this repo. Its purpose 
 To integrate the custom plugin in People_Track, move to: [gst-dsexample](https://github.com/PARCO-LAB/People_Track/tree/master/sources/gst-plugins/gst-dsexample) and follow the [README](https://github.com/PARCO-LAB/People_Track/blob/master/sources/gst-plugins/gst-dsexample/README) instructions
 
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](https://www.izsvepets.it/wp-content/uploads/2020/04/parvovirosi-eneterite-cuccioli-cane-diarrea.jpg)
